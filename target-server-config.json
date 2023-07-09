@@ -1,0 +1,6 @@
+{
+    "host": "www.google.com",
+    "name": "my-target-exxxxx",
+    "port": 443,
+    "SSL": true
+}

@@ -1,0 +1,12 @@
+name: ci-apigee-target-servers-workflow
+on: [push]
+jobs:
+  check-application:
+    runs-on: ubuntu-latest
+    steps:
+      - users: actions/checkout@v2
+      - users: actions/setup-go@v2
+        with:
+          go-version: 1.15
+      - run: go test
+      - run: go run math.go
